@@ -11,7 +11,7 @@ class Server {
     this.paths = {
       courses: "/api/courses",
       modules: "/api/modules",
-      class: "/api/classes",
+      classes: "/api/classes",
     };
     this.routes();
   }
@@ -27,6 +27,7 @@ class Server {
 
   routes() {
     this.app.use(this.paths.courses, require("../routes/Courses.route"));
+    this.app.use(this.paths.classes, require("../routes/Classes.route"));
   }
   listen() {
     this.app.listen(this.PORT, () => {

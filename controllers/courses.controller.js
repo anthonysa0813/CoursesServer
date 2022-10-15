@@ -3,7 +3,19 @@ const Courses = require("../models/Courses");
 
 // get all courses
 const getAllCourses = async (req = request, res = response) => {
+  const { name } = req.query;
   const courses = await Courses.find();
+  if (name) {
+    const regexFilter = new RegExp(`${name}`, "gi");
+    console.log("regex", regexFilter);
+    const courseFilter = courses.filter((c) => {
+      if (regexFilter.test(c.name)) {
+        console.log(c);
+        return c;
+      }
+    });
+    return res.json(courseFilter);
+  }
   return res.json(courses);
 };
 
