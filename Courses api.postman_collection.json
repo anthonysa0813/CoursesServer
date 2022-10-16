@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "e3954e91-d541-413e-9e33-d8fefddfe4f0",
+		"name": "Courses api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9252275"
+	},
+	"item": [
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "get all courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/courses?name=html",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"courses"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "html"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"HTML Y CSS\",\r\n    \"price\": \"10\",\r\n    \"description\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r\n    \"slug\": \"javascript\",\r\n    \"teacher\": \"Anthony Sanchez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/courses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Course by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/courses/6349df294754df2341e28d7c",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"courses",
+								"6349df294754df2341e28d7c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Course",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Javascript Avanzado\",\r\n    \"teacher\": \"Anthony s.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/courses/6349df294754df2341e28d7c",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"courses",
+								"6349df294754df2341e28d7c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete course",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/courses/6349df294754df2341e28d7c",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"courses",
+								"6349df294754df2341e28d7c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "modules",
+			"item": []
+		},
+		{
+			"name": "classes",
+			"item": [
+				{
+					"name": "get all clasess",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a new class",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"variables in Javascript\",\r\n    \"slug\": \"javascript\",\r\n    \"resumen\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\",\r\n    \"link\": \"https://www.youtube.com/watch?v=PDiw-9NpyRQ&t=1003s\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/classes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET class by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classes/634a1c96d8279de7a4c9979f",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classes",
+								"634a1c96d8279de7a4c9979f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Class",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Javascript variable\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/classes/634a1c96d8279de7a4c9979f",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classes",
+								"634a1c96d8279de7a4c9979f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete class",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/classes/634a1c96d8279de7a4c9979f",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"classes",
+								"634a1c96d8279de7a4c9979f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
