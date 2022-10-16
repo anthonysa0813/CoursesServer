@@ -19,10 +19,22 @@
 
 ![imagen_de_project](public\image_project.png)
 
+## clonar el repositorio
+
+```bash
+git clone git@github.com:anthonysa0813/CoursesServer.git
+```
+
+## Ingresar al repositorio
+
+```bash
+cd CoursesServer
+```
+
 ## Descargar las dependencias
 
 ```bash
- npm install
+ npm install ó yarn install
 ```
 
 # {{url}}
@@ -34,5 +46,5 @@ http://localhost:5050/api/
 # Correr el servidor
 
 ```bash
-  npm run dev
+  npm run dev ó yarn dev
 ```
