@@ -48,3 +48,8 @@ http://localhost:5050/api/
 ```bash
   npm run dev ó yarn dev
 ```
+
+# Información Extra
+
+- Si tienes mongoDBCompass, te puedes conectar a la base de datos con la siguiente ruta:
+  - mongodb+srv://root:Vx3!p-!2zLbDey4@cluster0.u4zza2q.mongodb.net/Courses
