@@ -17,6 +17,8 @@
   - url_github_client: https://github.com/anthonysa0813/coursesClient
 - URL Postman documentación: https://documenter.getpostman.com/view/9252275/2s847BUvkm#9b6ac89d-eb0d-4045-9132-e24114ac3ee5
 
+![imagen_de_project](public\image_project.png)
+
 ## Descargar las dependencias
 
 ```bash
